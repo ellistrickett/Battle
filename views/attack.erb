@@ -1,1 +1,6 @@
-<%=  @game.player_1.name %> attacked <%= @game.player_2.name%>! <%=@game.player_2.name%> - <%=@game.player_2.hp%>HP
+
+<%=  @game.current_turn.name %> attacked <%= @game.opponent.name %>! <%=@game.opponent.name %> - <%=@game.opponent.hp%>HP
+
+<form action="/confirm2" method="post">
+<input type="submit" value="Return">
+</form>
